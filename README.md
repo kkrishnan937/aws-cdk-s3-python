@@ -1,6 +1,11 @@
-# AWS CDK – Create an S3 Bucket using Python
+# AWS CDK – Secure S3 Bucket (Python)
 
-This project demonstrates how to use **AWS Cloud Development Kit (CDK)** with **Python** to provision an **Amazon S3 bucket** with **KMS encryption**.
+This repository demonstrates how to provision a **secure Amazon S3 bucket** using **AWS Cloud Development Kit (CDK)** with **Python**.  
+The infrastructure is defined as code and deployed via **AWS CloudFormation**, following AWS security best practices.
+
+This project was built as part of hands-on learning for the **AWS Solutions Architect Associate (SAA-C03)** certification and reflects real-world DevOps workflows.
+
+---
 
 ## 🧰 Tech Stack
 - AWS CDK (Python)
@@ -8,12 +13,28 @@ This project demonstrates how to use **AWS Cloud Development Kit (CDK)** with **
 - AWS KMS
 - AWS CloudFormation
 - Python 3.x
-- Node.js
+- Node.js & npm
 
-## 📁 Architecture
-- CDK Stack written in Python
-- Infrastructure synthesized into CloudFormation
-- Secure S3 bucket with server-side encryption (KMS)
+---
+
+## 🏗️ Architecture Overview
+- Infrastructure defined using **AWS CDK (Python)**
+- CDK synthesizes into **CloudFormation templates**
+- **Amazon S3 bucket** provisioned with:
+  - Server-side encryption using **AWS KMS**
+  - Managed lifecycle via CloudFormation
+- Deployment and teardown handled through **CDK CLI**
+
+---
+
+## 📌 Prerequisites
+Before deploying, ensure the following are installed and configured:
+
+- Node.js (LTS recommended)
+- AWS CDK CLI  
+  ```bash
+  npm install -g aws-cdk
+
 
 ## 📸 Screenshots
 
