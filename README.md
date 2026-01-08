@@ -28,3 +28,17 @@ cdk bootstrap
 
 # Deploy stack
 cdk deploy
+
+## 📸 Screenshots
+
+### CDK Deploy Output
+![CDK Deploy Output](images/cdk-deploy.png)
+
+### S3 Bucket in AWS Console
+![S3 Bucket](images/s3-bucket.png)
+
+
+## ✅ What I learned
+- How to initialize and structure an AWS CDK project in Python.
+- How `cdk synth`, `cdk bootstrap`, and `cdk deploy` work together with CloudFormation.
+- How to provision an S3 bucket with KMS encryption using Infrastructure as Code.
