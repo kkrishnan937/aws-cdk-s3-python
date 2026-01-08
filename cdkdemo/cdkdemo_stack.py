@@ -6,6 +6,7 @@ from aws_cdk import (
     aws_sqs as sqs,
     aws_sns as sns,
     aws_sns_subscriptions as subs,
+    aws_s3 as s3,
 )
 
 
@@ -13,6 +14,8 @@ class CdkdemoStack(Stack):
 
     def __init__(self, scope: Construct, construct_id: str, **kwargs) -> None:
         super().__init__(scope, construct_id, **kwargs)
+
+        bucket = s3.Bucket(self, 'MycdkdemoBucket')
 
         queue = sqs.Queue(
             self, "CdkdemoQueue",
